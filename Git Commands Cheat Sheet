@@ -1,0 +1,22 @@
+#  Git Essential Commands
+
+This file serves as a quick reference for the most commonly used Git commands.
+
+##  Starting a Project
+- (git init) # Initialize a local Git repository
+- (git clone <url>) # Create a local copy of a remote repository
+
+##  Making Changes
+- (git status) # View the state of your working directory and staging area
+- (git add <file>) # Add a specific file to the staging area
+- (git add .) # Add all changed files to the staging area
+- (git commit -m "message") # Save the staged snapshot with a descriptive message
+
+##  Working with Remotes
+- (git push origin main) # Upload local commits to the remote main branch
+- (git pull) # Fetch and merge changes from the remote server to your local machine
+- (git remote -v) # List all remote connections and their URLs
+
+##  Branching
+- (git branch) # List all local branches
+- (git checkout -b) <name>` # Create and switch to a new branch
