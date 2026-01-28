@@ -25,12 +25,24 @@ This file serves as a quick reference for the most commonly used Git commands.
 
 - (git push origin main)                                 # Push your files to GitHub // Upload local commits to the remote main branch 
 
+- (git config --global credential.helper store)          # Save your credentials permanently // To save // Access Tocken as Passwort
+
 - (git pull)                                             # Fetch and merge changes from the remote server to your local machine
 
 - (git pull origin main --rebase)                        # Fetch updates from GitHub and replay your local commits on top of them to avoid conflicts
  
-- (git remote -v)                                        # List all remote connections and their URLs
+- (git checkout --ours <filename>)                       # Keep your local version of <filename> file
 
+- (git rebase --continoue)                               # Continue the rebase process after resolving the conflict
+############################################################################################################################
+#    
+#   - (git rebase --abort)                   # Cancel the current rebase process and go back
+#   - (git push -u origin main --force)      # Force push your local content and overwrite the remote (use with caution)
+#
+############################################################################################################################
+
+- (git remote -v)                                        # List all remote connections and their URLs
+-----------------------------------------------------------------------------------------------------------------------
 ##  Branching
 - (git branch)                                           # List all local branches
 - (git checkout -b <name>)                               # Create and switch to a new branch
